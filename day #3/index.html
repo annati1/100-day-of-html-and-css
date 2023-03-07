@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Design</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="logo"><h3><span>A</span>lien<span>X</span></h3></div>
+    <div class="main">
+        <ul>
+            <li><a href="#home" class="">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+        <h1 class="text1" >Hello I Am <span id="text1">AlienX</span></h1>
+        <h1  class="text2">I'm A Beginner In Web <span id="text2">Devlopment</span></h1>
+        <button class="btn">Explore More</button>
+    <script>
+        const headingText = document.getElementById('text1').textContent;
+        const headingElement = document.getElementById('text1');
+        headingElement.textContent = '';
+        for (let i = 0; i < headingText.length; i++) {
+          setTimeout(() => {
+            headingElement.textContent += headingText[i];
+          }, i * 200);
+        }
+        const alienx = document.getElementById('text2').textContent;
+        const tester = document.getElementById('text2');
+        tester.textContent = '';
+        for (let i = 0; i < alienx.length; i++) {
+          setTimeout(() => {
+            tester.textContent += alienx[i];
+          }, i * 150);
+        }
+      </script>
+</body>
+</html>
